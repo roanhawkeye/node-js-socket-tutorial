@@ -1,0 +1,25 @@
+{
+  "name": "node-js-tutorial",
+  "version": "1.0.0",
+  "description": "node js tutorial soup to bit",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roanhawkeye/node-js-socket-tutorial.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/roanhawkeye/node-js-socket-tutorial/issues"
+  },
+  "homepage": "https://github.com/roanhawkeye/node-js-socket-tutorial#readme",
+  "dependencies": {
+    "axon": "^2.0.2",
+    "express": "^3.0.0",
+    "redis": "^0.12.1",
+    "underscore": "^1.8.3"
+  }
+}
