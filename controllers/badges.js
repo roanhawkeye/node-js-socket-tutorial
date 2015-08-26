@@ -13,6 +13,7 @@ exports.save = function(req, res, next){
 	model.save(badges, function(err){
 		if (err) return res.json(503, { error:true });
 		next();
+		model.trim();
 	});
 };
 
@@ -20,5 +21,9 @@ exports.save = function(req, res, next){
 * Send badges to pub/sub to socket in model
 */
 exports.send = function(req, res, next){
-	next()
+	var badges = _.clone(req.body);
+	model.send(badges, function(err){
+		if (err) return res.json(503, { error:true });
+		res.json(200, { error: null });
+	});
 };
